@@ -1,0 +1,33 @@
+<div class="card">
+    <form (ngSubmit)="Newbook()">
+
+        <!-- Body -->
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td>book Code</td>
+                            <td><input type="text" name="p_code" [(ngModel)]="bookItem.bookCode"></td>
+                        </tr>
+                        <tr>
+                            <td>book Name</td>
+                            <td><input type="text" name="p_name" [(ngModel)]="bookItem.bookName"></td>
+                        </tr>
+                        <tr>
+                            <td>book Author</td>
+                            <td><input type="text" name="p_author" [(ngModel)]="bookItem.bookAuthor"></td>
+                        </tr>
+                        <tr>
+                            <td>book Price</td>
+                            <td><input type="number" name="p_price" [(ngModel)]="bookItem.bookprice"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="Submit"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</div>

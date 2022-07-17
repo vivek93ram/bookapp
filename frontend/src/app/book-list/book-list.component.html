@@ -1,0 +1,28 @@
+<div class="card-body">
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Code</th>
+                    <th>Book Name</th>
+                    <th>Author</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data from the database should display here -->
+                <tr *ngFor='let i of books'>
+                   
+                    <td>{{i.bookCode}}</td>
+                    <td>{{i.bookName}}</td>
+                    <td>{{i.bookAuthor}}</td>
+                    <td>{{i.bookprice}}</td>
+                  
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
